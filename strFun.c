@@ -1,19 +1,23 @@
 #include <stdio.h>
 
+#define SIZE 1024
+
 int Strlen(char *str);
 
 int main(){
-    char yeet[] = "Ong frfr";
+
+    char buffer[SIZE] = "Hello again";
+    char yeet[SIZE] = "Ong frfr";
     // char *yeet;
-    Strlen(yeet);
+    int len = Strlen(yeet);
 
 }
 
 int Strlen(char *str){
-    int cnt;
+    int cnt = 0;
     while(*str != '\0'){
         cnt++;
-        *str++;
+        str++;
     }
-    printf("String length: %d\n", cnt);
+    return cnt;
 }
