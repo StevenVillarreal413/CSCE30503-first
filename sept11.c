@@ -32,6 +32,8 @@ int main(){
     showStudent(student1);
     showStudentRef(student2);
 
+    free(student2);
+
     return 0;
 }
 
