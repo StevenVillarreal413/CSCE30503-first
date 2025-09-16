@@ -19,5 +19,6 @@ int Strlen(char *str){
         cnt++;
         str++;
     }
+    printf("String Length: %d\n", cnt);
     return cnt;
 }
